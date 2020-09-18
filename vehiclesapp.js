@@ -22,7 +22,7 @@ var firebaseConfig = {
         box.id="card"
         box.onclick = function(){
           var url = window.location.href;
-          url = "http://198.168.0.27:8081/vehicle_fulldisplay.html#?" + doc.id
+          url = "https://felipeschmitt.github.io/joinville.compracarros/vehicle_fulldisplay.html#?" + doc.id
           window.open(url)
           if(url.indexOf("#?")){
             url
