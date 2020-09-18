@@ -1,0 +1,97 @@
+.filters{
+    background-color: #343a40;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 50%;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.filters label{
+    padding: 5px;
+}
+.filters select{
+    width: 70%;
+    display: block;
+}
+#year{
+    padding-top: 30px;
+}
+#year1, #year2{
+    width: 20%;
+    display: inline;
+}
+.filters button{
+    width: 25%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #17a2b8;
+    color: #17a2b8;
+    height: 40px;
+    border-radius: 7px;
+}
+.filters button:hover{
+    background-color: #17a2b8;
+    color: white;
+}
+
+
+
+#vehicles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#vehicles p{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#vehicles #card:hover{
+    box-shadow: 0 0 10px;
+    cursor: pointer;
+}
+#itens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: auto;
+}
+#itens div{
+    margin: auto;
+}
+#km{
+    display: flex;
+}
+#p_description{
+    margin: 10px;
+}
+#card h5{
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 60em){
+#vehicles{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.filters{
+    width: 98%;
+}
+.filters button{
+    width: 40%;
+}
+#itens{
+    grid-template-columns: 1fr 1fr;
+}
+#card h5{
+    font-size: 0.8rem;
+}
+}
+@media screen and (max-width: 1366px){
+    #itens{
+        grid-template-columns: 1fr 1fr;
+    }
+}
