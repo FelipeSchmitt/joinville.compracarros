@@ -51,7 +51,7 @@ var firebaseConfig = {
 async function readVehicles() {
     Vehicles = []
     var url = window.location.href;
-    const url_id = url.substring(76, 140)
+    const url_id = url.substring(81, 140)
     console.log(url_id)
     const logVehicles = await db.collection("vehicles").where(firebase.firestore.FieldPath.documentId(), '==', url_id).get()
     for (doc of logVehicles.docs) {
